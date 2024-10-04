@@ -103,7 +103,7 @@ library.themes = {
         }
     },
     {
-        name = 'Informant_V1',
+        name = 'Midnight',
         theme = {
             ['Accent']                    = fromrgb(103,89,179);
             ['Background']                = fromrgb(22,22,31);
@@ -129,7 +129,7 @@ library.themes = {
         }
     },
     {
-        name = 'Fatality',
+        name = 'Dusk',
         theme = {
             ['Accent']                    = fromrgb(197,7,83);
             ['Background']                = fromrgb(25,19,53);
@@ -155,7 +155,7 @@ library.themes = {
         }
     },
     {
-        name = 'Gamesense',
+        name = 'Neon',
         theme = {
             ['Accent']                    = fromrgb(147,184,26);
             ['Background']                = fromrgb(17,17,17);
@@ -181,7 +181,7 @@ library.themes = {
         }
     },
     {
-        name = 'Twitch',
+        name = 'Cozy',
         theme = {
             ['Accent']                    = fromrgb(169,112,255);
             ['Background']                = fromrgb(14,14,14);
@@ -4620,12 +4620,6 @@ function library:CreateSettingsTab(menu)
     local configSection = settingsTab:AddSection('Config', 2);
     local mainSection = settingsTab:AddSection('Main', 1);
     local creditsSection = settingsTab:AddSection('Credits', 2);
-    creditsSection:AddSeparator({text = 'Owners/Developers'});
-    creditsSection:AddText({text = "xz#1111"})
-    creditsSection:AddText({text = "goof#1000"})
-    creditsSection:AddSeparator({text = 'Helpers'});
-    creditsSection:AddText({text = "encode#9999"})
-    creditsSection:AddText({text = "Vault#5434"})
 
 
     configSection:AddBox({text = 'Config Name', flag = 'configinput'})
