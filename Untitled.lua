@@ -4701,7 +4701,7 @@ function library:CreateSettingsTab(menu)
     end})
 
     mainSection:AddButton({text = 'Copy Dev @', callback = function()
-        setclipboard('99.lua'):format(game.PlaceId, game.JobId))
+        setclipboard('99.lua')
     end})
 
     mainSection:AddButton({text = 'Unload', confirm = true, callback = function()
