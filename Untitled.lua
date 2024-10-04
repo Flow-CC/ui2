@@ -4700,8 +4700,8 @@ function library:CreateSettingsTab(menu)
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId);
     end})
 
-    mainSection:AddButton({text = 'Copy Dev @', callback = function()
-        setclipboard('99.lua')
+    mainSection:AddButton({text = 'Add @99.lua if you need help', callback = function()
+        --setclipboard('99.lua')
     end})
 
     mainSection:AddButton({text = 'Unload', confirm = true, callback = function()
