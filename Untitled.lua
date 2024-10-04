@@ -4701,7 +4701,7 @@ function library:CreateSettingsTab(menu)
     end})
 
     mainSection:AddButton({text = 'Add @99.lua if you need help', callback = function()
-        --setclipboard('99.lua')
+        setclipboard('https://discord.gg/'..getgenv().Config.Invite)
     end})
 
     mainSection:AddButton({text = 'Unload', confirm = true, callback = function()
