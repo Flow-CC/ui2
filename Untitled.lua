@@ -70,8 +70,8 @@ local library = {
     open = false;
     opening = false;
     hasInit = false;
-    cheatname = startupArgs.cheatname or 'octohook';
-    gamename = startupArgs.gamename or 'universal';
+    cheatname = startupArgs.cheatname or 'flow';
+    gamename = startupArgs.gamename or 'aftershit';
     fileext = startupArgs.fileext or '.txt';
 }
 
