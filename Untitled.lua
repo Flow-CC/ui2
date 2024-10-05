@@ -1,8 +1,4 @@
---[[
-Octohook ui lib informant version
-Developed by liam#4567
-Edited by xz#1111
-]]
+
 
 -- // Load
 
@@ -4700,14 +4696,14 @@ function library:CreateSettingsTab(menu)
         game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId);
     end})
 
-    mainSection:AddButton({text = 'Add @99.lua if you need help', callback = function()
-        setclipboard('https://discord.gg/'..getgenv().Config.Invite)
-    end})
+    --mainSection:AddButton({text = 'Add @99.lua if you need help', callback = function()
+    --    setclipboard('https://discord.gg/'..getgenv().Config.Invite)
+    --end})
 
-    mainSection:AddButton({text = 'Unload', confirm = true, callback = function()
-        library:Unload();
-    end})
-
+    --mainSection:AddButton({text = 'Unload', confirm = true, callback = function()
+    --    library:Unload();
+    --end})
+--[[
     mainSection:AddSeparator({text = 'Keybinds'});
     mainSection:AddToggle({text = 'Keybind Indicator', flag = 'keybind_indicator', callback = function(bool)
         library.keyIndicator:SetEnabled(bool);
@@ -4726,7 +4722,7 @@ function library:CreateSettingsTab(menu)
     end})
     mainSection:AddSlider({text = 'Custom X', flag = 'watermark_x', suffix = '%', value = 6.1, min = 0, max = 100, increment = .1});
     mainSection:AddSlider({text = 'Custom Y', flag = 'watermark_y', suffix = '%', value = 1.2, min = 0, max = 100, increment = .1});
-
+--]]
     local themeStrings = {};
     for _,v in next, library.themes do
         table.insert(themeStrings, v.name)
