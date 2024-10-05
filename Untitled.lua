@@ -4613,7 +4613,7 @@ end
 
 function library:CreateSettingsTab(menu)
     local settingsTab = menu:AddTab('Settings', 999);
-    local configSection = settingsTab:AddSection('Config', 2);
+    local configSection = settingsTab:AddSection('Config (Most likely does not work)', 2);
     local mainSection = settingsTab:AddSection('Main', 1);
 
     configSection:AddBox({text = 'Config Name', flag = 'configinput'})
