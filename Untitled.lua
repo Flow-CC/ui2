@@ -4615,6 +4615,11 @@ function library:CreateSettingsTab(menu)
     local settingsTab = menu:AddTab('Settings', 999);
     local configSection = settingsTab:AddSection('Config (Most likely does not work)', 2);
     local mainSection = settingsTab:AddSection('Main', 1);
+    local creditsSection = settingsTab:AddSection('Credits', 2);
+    creditsSection:AddSeparator({text = 'Main Developer'});
+    creditsSection:AddText({text = "99.lua"})
+    creditsSection:AddSeparator({text = 'Helper - Collaborator'});
+    creditsSection:AddText({text = "sany_."})
 
     configSection:AddBox({text = 'Config Name', flag = 'configinput'})
     configSection:AddList({text = 'Config', flag = 'selectedconfig'})
