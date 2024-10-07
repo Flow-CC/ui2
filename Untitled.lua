@@ -4619,7 +4619,7 @@ function library:CreateSettingsTab(menu)
     creditsSection:AddSeparator({text = 'Main Developer'});
     creditsSection:AddText({text = "99.lua"})
     creditsSection:AddSeparator({text = 'Helper - Collaborator'});
-    creditsSection:AddText({text = "sany_."})
+    creditsSection:AddText({text = "sany_. , AftermathFreshy"})
 
     configSection:AddBox({text = 'Config Name', flag = 'configinput'})
     configSection:AddList({text = 'Config', flag = 'selectedconfig'})
